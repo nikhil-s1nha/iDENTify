@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187BD1A32B0D2D6700DEAFB2 /* iDENTicamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1A22B0D2D6700DEAFB2 /* iDENTicamApp.swift */; };
+		187BD1A52B0D2D6700DEAFB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1A42B0D2D6700DEAFB2 /* ContentView.swift */; };
+		187BD1A72B0D2D6800DEAFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BD1A62B0D2D6800DEAFB2 /* Assets.xcassets */; };
+		187BD1AA2B0D2D6800DEAFB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BD1A92B0D2D6800DEAFB2 /* Preview Assets.xcassets */; };
+		187BD1B42B0D2D6800DEAFB2 /* iDENTicamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1B32B0D2D6800DEAFB2 /* iDENTicamTests.swift */; };
+		187BD1BE2B0D2D6800DEAFB2 /* iDENTicamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1BD2B0D2D6800DEAFB2 /* iDENTicamUITests.swift */; };
+		187BD1C02B0D2D6800DEAFB2 /* iDENTicamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1BF2B0D2D6800DEAFB2 /* iDENTicamUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		187BD1B02B0D2D6800DEAFB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187BD1972B0D2D6700DEAFB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187BD19E2B0D2D6700DEAFB2;
+			remoteInfo = iDENTicam;
+		};
+		187BD1BA2B0D2D6800DEAFB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187BD1972B0D2D6700DEAFB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187BD19E2B0D2D6700DEAFB2;
+			remoteInfo = iDENTicam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		187BD19F2B0D2D6700DEAFB2 /* iDENTicam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDENTicam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BD1A22B0D2D6700DEAFB2 /* iDENTicamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTicamApp.swift; sourceTree = "<group>"; };
+		187BD1A42B0D2D6700DEAFB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		187BD1A62B0D2D6800DEAFB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		187BD1A92B0D2D6800DEAFB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		187BD1AF2B0D2D6800DEAFB2 /* iDENTicamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDENTicamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BD1B32B0D2D6800DEAFB2 /* iDENTicamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTicamTests.swift; sourceTree = "<group>"; };
+		187BD1B92B0D2D6800DEAFB2 /* iDENTicamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDENTicamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BD1BD2B0D2D6800DEAFB2 /* iDENTicamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTicamUITests.swift; sourceTree = "<group>"; };
+		187BD1BF2B0D2D6800DEAFB2 /* iDENTicamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTicamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187BD19C2B0D2D6700DEAFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BD1AC2B0D2D6800DEAFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BD1B62B0D2D6800DEAFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187BD1962B0D2D6700DEAFB2 = {
+			isa = PBXGroup;
+			children = (
+				187BD1A12B0D2D6700DEAFB2 /* iDENTicam */,
+				187BD1B22B0D2D6800DEAFB2 /* iDENTicamTests */,
+				187BD1BC2B0D2D6800DEAFB2 /* iDENTicamUITests */,
+				187BD1A02B0D2D6700DEAFB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187BD1A02B0D2D6700DEAFB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187BD19F2B0D2D6700DEAFB2 /* iDENTicam.app */,
+				187BD1AF2B0D2D6800DEAFB2 /* iDENTicamTests.xctest */,
+				187BD1B92B0D2D6800DEAFB2 /* iDENTicamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187BD1A12B0D2D6700DEAFB2 /* iDENTicam */ = {
+			isa = PBXGroup;
+			children = (
+				187BD1A22B0D2D6700DEAFB2 /* iDENTicamApp.swift */,
+				187BD1A42B0D2D6700DEAFB2 /* ContentView.swift */,
+				187BD1A62B0D2D6800DEAFB2 /* Assets.xcassets */,
+				187BD1A82B0D2D6800DEAFB2 /* Preview Content */,
+			);
+			path = iDENTicam;
+			sourceTree = "<group>";
+		};
+		187BD1A82B0D2D6800DEAFB2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				187BD1A92B0D2D6800DEAFB2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		187BD1B22B0D2D6800DEAFB2 /* iDENTicamTests */ = {
+			isa = PBXGroup;
+			children = (
+				187BD1B32B0D2D6800DEAFB2 /* iDENTicamTests.swift */,
+			);
+			path = iDENTicamTests;
+			sourceTree = "<group>";
+		};
+		187BD1BC2B0D2D6800DEAFB2 /* iDENTicamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				187BD1BD2B0D2D6800DEAFB2 /* iDENTicamUITests.swift */,
+				187BD1BF2B0D2D6800DEAFB2 /* iDENTicamUITestsLaunchTests.swift */,
+			);
+			path = iDENTicamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187BD19E2B0D2D6700DEAFB2 /* iDENTicam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187BD1C32B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTicam" */;
+			buildPhases = (
+				187BD19B2B0D2D6700DEAFB2 /* Sources */,
+				187BD19C2B0D2D6700DEAFB2 /* Frameworks */,
+				187BD19D2B0D2D6700DEAFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDENTicam;
+			productName = iDENTicam;
+			productReference = 187BD19F2B0D2D6700DEAFB2 /* iDENTicam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		187BD1AE2B0D2D6800DEAFB2 /* iDENTicamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187BD1C62B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTicamTests" */;
+			buildPhases = (
+				187BD1AB2B0D2D6800DEAFB2 /* Sources */,
+				187BD1AC2B0D2D6800DEAFB2 /* Frameworks */,
+				187BD1AD2B0D2D6800DEAFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187BD1B12B0D2D6800DEAFB2 /* PBXTargetDependency */,
+			);
+			name = iDENTicamTests;
+			productName = iDENTicamTests;
+			productReference = 187BD1AF2B0D2D6800DEAFB2 /* iDENTicamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		187BD1B82B0D2D6800DEAFB2 /* iDENTicamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187BD1C92B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTicamUITests" */;
+			buildPhases = (
+				187BD1B52B0D2D6800DEAFB2 /* Sources */,
+				187BD1B62B0D2D6800DEAFB2 /* Frameworks */,
+				187BD1B72B0D2D6800DEAFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187BD1BB2B0D2D6800DEAFB2 /* PBXTargetDependency */,
+			);
+			name = iDENTicamUITests;
+			productName = iDENTicamUITests;
+			productReference = 187BD1B92B0D2D6800DEAFB2 /* iDENTicamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187BD1972B0D2D6700DEAFB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					187BD19E2B0D2D6700DEAFB2 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					187BD1AE2B0D2D6800DEAFB2 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 187BD19E2B0D2D6700DEAFB2;
+					};
+					187BD1B82B0D2D6800DEAFB2 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 187BD19E2B0D2D6700DEAFB2;
+					};
+				};
+			};
+			buildConfigurationList = 187BD19A2B0D2D6700DEAFB2 /* Build configuration list for PBXProject "iDENTicam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 187BD1962B0D2D6700DEAFB2;
+			productRefGroup = 187BD1A02B0D2D6700DEAFB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187BD19E2B0D2D6700DEAFB2 /* iDENTicam */,
+				187BD1AE2B0D2D6800DEAFB2 /* iDENTicamTests */,
+				187BD1B82B0D2D6800DEAFB2 /* iDENTicamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187BD19D2B0D2D6700DEAFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BD1AA2B0D2D6800DEAFB2 /* Preview Assets.xcassets in Resources */,
+				187BD1A72B0D2D6800DEAFB2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BD1AD2B0D2D6800DEAFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BD1B72B0D2D6800DEAFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187BD19B2B0D2D6700DEAFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BD1A52B0D2D6700DEAFB2 /* ContentView.swift in Sources */,
+				187BD1A32B0D2D6700DEAFB2 /* iDENTicamApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BD1AB2B0D2D6800DEAFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BD1B42B0D2D6800DEAFB2 /* iDENTicamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BD1B52B0D2D6800DEAFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BD1BE2B0D2D6800DEAFB2 /* iDENTicamUITests.swift in Sources */,
+				187BD1C02B0D2D6800DEAFB2 /* iDENTicamUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		187BD1B12B0D2D6800DEAFB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187BD19E2B0D2D6700DEAFB2 /* iDENTicam */;
+			targetProxy = 187BD1B02B0D2D6800DEAFB2 /* PBXContainerItemProxy */;
+		};
+		187BD1BB2B0D2D6800DEAFB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187BD19E2B0D2D6700DEAFB2 /* iDENTicam */;
+			targetProxy = 187BD1BA2B0D2D6800DEAFB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		187BD1C12B0D2D6800DEAFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		187BD1C22B0D2D6800DEAFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187BD1C42B0D2D6800DEAFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iDENTicam/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sinha.iDENTicam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		187BD1C52B0D2D6800DEAFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iDENTicam/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sinha.iDENTicam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		187BD1C72B0D2D6800DEAFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sinha.iDENTicamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iDENTicam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iDENTicam";
+			};
+			name = Debug;
+		};
+		187BD1C82B0D2D6800DEAFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sinha.iDENTicamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iDENTicam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iDENTicam";
+			};
+			name = Release;
+		};
+		187BD1CA2B0D2D6800DEAFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sinha.iDENTicamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iDENTicam;
+			};
+			name = Debug;
+		};
+		187BD1CB2B0D2D6800DEAFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sinha.iDENTicamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iDENTicam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187BD19A2B0D2D6700DEAFB2 /* Build configuration list for PBXProject "iDENTicam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BD1C12B0D2D6800DEAFB2 /* Debug */,
+				187BD1C22B0D2D6800DEAFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187BD1C32B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTicam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BD1C42B0D2D6800DEAFB2 /* Debug */,
+				187BD1C52B0D2D6800DEAFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187BD1C62B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTicamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BD1C72B0D2D6800DEAFB2 /* Debug */,
+				187BD1C82B0D2D6800DEAFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187BD1C92B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTicamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BD1CA2B0D2D6800DEAFB2 /* Debug */,
+				187BD1CB2B0D2D6800DEAFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 187BD1972B0D2D6700DEAFB2 /* Project object */;
+}
