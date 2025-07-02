@@ -6,7 +6,7 @@ This project emphasizes the use of advanced computer vision techniques tailored 
 
 ---
 
-## 🧠 Core Computer Vision Components
+## Core Computer Vision Components
 
 - **Image Classification**  
   Built using **TensorFlow** and **Keras**, Identify uses CNN-based architectures fine-tuned on curated dental datasets to classify teeth, identify common issues (e.g., caries, plaque), and segment specific regions.
