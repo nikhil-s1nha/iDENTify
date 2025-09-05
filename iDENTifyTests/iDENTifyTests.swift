@@ -1,14 +1,14 @@
 //
-//  iDENTicamTests.swift
-//  iDENTicamTests
+//  iDENTifyTests.swift
+//  iDENTifyTests
 //
 //  Created by Nikhil Sinha on 11/21/23.
 //
 
 import XCTest
-@testable import iDENTicam
+@testable import iDENTify
 
-final class iDENTicamTests: XCTestCase {
+final class iDENTifyTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

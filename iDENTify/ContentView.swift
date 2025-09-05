@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  iDENTicam
+//  iDENTify
 //
 //  Created by Nikhil Sinha on 11/21/23.
 //
@@ -22,7 +22,7 @@ struct ContentView: View {
                 .offset(y:-210)
                 .padding(.bottom, -130)
             VStack (alignment: .leading){
-                Text("iDENTicam").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(.blue)
+                Text("iDENTify").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(.blue)
                 HStack{
                     Text("An App for All Your Oral Needs").font(.subheadline)
                 }

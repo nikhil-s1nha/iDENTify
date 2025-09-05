@@ -1,13 +1,13 @@
 //
-//  iDENTicamUITestsLaunchTests.swift
-//  iDENTicamUITests
+//  iDENTifyUITestsLaunchTests.swift
+//  iDENTifyUITests
 //
 //  Created by Nikhil Sinha on 11/21/23.
 //
 
 import XCTest
 
-final class iDENTicamUITestsLaunchTests: XCTestCase {
+final class iDENTifyUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
