@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-					187BD1A32B0D2D6700DEAFB2 /* iDENTifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1A22B0D2D6700DEAFB2 /* iDENTifyApp.swift */; };
+		187BD1A32B0D2D6700DEAFB2 /* iDENTifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1A22B0D2D6700DEAFB2 /* iDENTifyApp.swift */; };
 		187BD1A52B0D2D6700DEAFB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1A42B0D2D6700DEAFB2 /* ContentView.swift */; };
 		187BD1A72B0D2D6800DEAFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BD1A62B0D2D6800DEAFB2 /* Assets.xcassets */; };
 		187BD1AA2B0D2D6800DEAFB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BD1A92B0D2D6800DEAFB2 /* Preview Assets.xcassets */; };
-					187BD1B42B0D2D6800DEAFB2 /* iDENTifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1B32B0D2D6800DEAFB2 /* iDENTifyTests.swift */; };
-					187BD1BE2B0D2D6800DEAFB2 /* iDENTifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1BD2B0D2D6800DEAFB2 /* iDENTifyUITests.swift */; };
-					187BD1C02B0D2D6800DEAFB2 /* iDENTifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1BF2B0D2D6800DEAFB2 /* iDENTifyUITestsLaunchTests.swift */; };
+		187BD1B42B0D2D6800DEAFB2 /* iDENTifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1B32B0D2D6800DEAFB2 /* iDENTifyTests.swift */; };
+		187BD1BE2B0D2D6800DEAFB2 /* iDENTifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1BD2B0D2D6800DEAFB2 /* iDENTifyUITests.swift */; };
+		187BD1C02B0D2D6800DEAFB2 /* iDENTifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD1BF2B0D2D6800DEAFB2 /* iDENTifyUITestsLaunchTests.swift */; };
+		234CCEB5DB86C9EA46627856 /* Pods_iDENTify_iDENTifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DB5914789C997A139CE704 /* Pods_iDENTify_iDENTifyUITests.framework */; };
+		61E5D15D10CB1C7EC34934BA /* Pods_iDENTify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C129DADFCB0BB24EAA15BA39 /* Pods_iDENTify.framework */; };
+		C7250074CEA0FF145D887A93 /* Pods_iDENTifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23721D5DADE5A110743D032A /* Pods_iDENTifyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +37,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-					187BD19F2B0D2D6700DEAFB2 /* iDENTify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDENTify.app; sourceTree = BUILT_PRODUCTS_DIR; };
-					187BD1A22B0D2D6700DEAFB2 /* iDENTifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTifyApp.swift; sourceTree = "<group>"; };
+		187BD19F2B0D2D6700DEAFB2 /* iDENTify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDENTify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BD1A22B0D2D6700DEAFB2 /* iDENTifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTifyApp.swift; sourceTree = "<group>"; };
 		187BD1A42B0D2D6700DEAFB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		187BD1A62B0D2D6800DEAFB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187BD1A92B0D2D6800DEAFB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-					187BD1AF2B0D2D6800DEAFB2 /* iDENTifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDENTifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-					187BD1B32B0D2D6800DEAFB2 /* iDENTifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTifyTests.swift; sourceTree = "<group>"; };
-					187BD1B92B0D2D6800DEAFB2 /* iDENTifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDENTifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-					187BD1BD2B0D2D6800DEAFB2 /* iDENTifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTifyUITests.swift; sourceTree = "<group>"; };
-					187BD1BF2B0D2D6800DEAFB2 /* iDENTifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		187BD1AF2B0D2D6800DEAFB2 /* iDENTifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDENTifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BD1B32B0D2D6800DEAFB2 /* iDENTifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTifyTests.swift; sourceTree = "<group>"; };
+		187BD1B92B0D2D6800DEAFB2 /* iDENTifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDENTifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BD1BD2B0D2D6800DEAFB2 /* iDENTifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTifyUITests.swift; sourceTree = "<group>"; };
+		187BD1BF2B0D2D6800DEAFB2 /* iDENTifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDENTifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23721D5DADE5A110743D032A /* Pods_iDENTifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDENTifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A92D87B0A27347321B5F25 /* Pods-iDENTify-iDENTifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDENTify-iDENTifyUITests.release.xcconfig"; path = "Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3DBE1912758B702BDA421FD8 /* Pods-iDENTifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDENTifyTests.release.xcconfig"; path = "Target Support Files/Pods-iDENTifyTests/Pods-iDENTifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C8ED5688CDDF698C225E55A /* Pods-iDENTify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDENTify.release.xcconfig"; path = "Target Support Files/Pods-iDENTify/Pods-iDENTify.release.xcconfig"; sourceTree = "<group>"; };
+		91DB5914789C997A139CE704 /* Pods_iDENTify_iDENTifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDENTify_iDENTifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E1515DB2550801A9EF4BF7 /* Pods-iDENTify-iDENTifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDENTify-iDENTifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9F79AA1405A75CD87283F18 /* Pods-iDENTify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDENTify.debug.xcconfig"; path = "Target Support Files/Pods-iDENTify/Pods-iDENTify.debug.xcconfig"; sourceTree = "<group>"; };
+		C129DADFCB0BB24EAA15BA39 /* Pods_iDENTify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDENTify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1E809E30B4869460D2EA60 /* Pods-iDENTifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDENTifyTests.debug.xcconfig"; path = "Target Support Files/Pods-iDENTifyTests/Pods-iDENTifyTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E5D15D10CB1C7EC34934BA /* Pods_iDENTify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7250074CEA0FF145D887A93 /* Pods_iDENTifyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234CCEB5DB86C9EA46627856 /* Pods_iDENTify_iDENTifyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,8 @@
 				187BD1B22B0D2D6800DEAFB2 /* iDENTifyTests */,
 				187BD1BC2B0D2D6800DEAFB2 /* iDENTifyUITests */,
 				187BD1A02B0D2D6700DEAFB2 /* Products */,
+				BF6946F44BE314BBC4E81CE7 /* Pods */,
+				19D1C501385F695C2E3CE887 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +108,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-					187BD1A12B0D2D6700DEAFB2 /* iDENTify */ = {
+		187BD1A12B0D2D6700DEAFB2 /* iDENTify */ = {
 			isa = PBXGroup;
 			children = (
 				187BD1A22B0D2D6700DEAFB2 /* iDENTifyApp.swift */,
@@ -110,7 +127,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-					187BD1B22B0D2D6800DEAFB2 /* iDENTifyTests */ = {
+		187BD1B22B0D2D6800DEAFB2 /* iDENTifyTests */ = {
 			isa = PBXGroup;
 			children = (
 				187BD1B32B0D2D6800DEAFB2 /* iDENTifyTests.swift */,
@@ -118,7 +135,7 @@
 			path = iDENTifyTests;
 			sourceTree = "<group>";
 		};
-					187BD1BC2B0D2D6800DEAFB2 /* iDENTifyUITests */ = {
+		187BD1BC2B0D2D6800DEAFB2 /* iDENTifyUITests */ = {
 			isa = PBXGroup;
 			children = (
 				187BD1BD2B0D2D6800DEAFB2 /* iDENTifyUITests.swift */,
@@ -127,16 +144,42 @@
 			path = iDENTifyUITests;
 			sourceTree = "<group>";
 		};
+		19D1C501385F695C2E3CE887 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C129DADFCB0BB24EAA15BA39 /* Pods_iDENTify.framework */,
+				91DB5914789C997A139CE704 /* Pods_iDENTify_iDENTifyUITests.framework */,
+				23721D5DADE5A110743D032A /* Pods_iDENTifyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6946F44BE314BBC4E81CE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9F79AA1405A75CD87283F18 /* Pods-iDENTify.debug.xcconfig */,
+				6C8ED5688CDDF698C225E55A /* Pods-iDENTify.release.xcconfig */,
+				A8E1515DB2550801A9EF4BF7 /* Pods-iDENTify-iDENTifyUITests.debug.xcconfig */,
+				38A92D87B0A27347321B5F25 /* Pods-iDENTify-iDENTifyUITests.release.xcconfig */,
+				FD1E809E30B4869460D2EA60 /* Pods-iDENTifyTests.debug.xcconfig */,
+				3DBE1912758B702BDA421FD8 /* Pods-iDENTifyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-					187BD19E2B0D2D6700DEAFB2 /* iDENTify */ = {
+		187BD19E2B0D2D6700DEAFB2 /* iDENTify */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187BD1C32B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTify" */;
 			buildPhases = (
+				38D5A2BA736F86D14159B6DA /* [CP] Check Pods Manifest.lock */,
 				187BD19B2B0D2D6700DEAFB2 /* Sources */,
 				187BD19C2B0D2D6700DEAFB2 /* Frameworks */,
 				187BD19D2B0D2D6700DEAFB2 /* Resources */,
+				B9D10D11951F6F92358CB017 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,10 +190,11 @@
 			productReference = 187BD19F2B0D2D6700DEAFB2 /* iDENTify.app */;
 			productType = "com.apple.product-type.application";
 		};
-					187BD1AE2B0D2D6800DEAFB2 /* iDENTifyTests */ = {
+		187BD1AE2B0D2D6800DEAFB2 /* iDENTifyTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187BD1C62B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTifyTests" */;
 			buildPhases = (
+				895B0C9009A7A63A9ACD89C8 /* [CP] Check Pods Manifest.lock */,
 				187BD1AB2B0D2D6800DEAFB2 /* Sources */,
 				187BD1AC2B0D2D6800DEAFB2 /* Frameworks */,
 				187BD1AD2B0D2D6800DEAFB2 /* Resources */,
@@ -165,13 +209,15 @@
 			productReference = 187BD1AF2B0D2D6800DEAFB2 /* iDENTifyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-					187BD1B82B0D2D6800DEAFB2 /* iDENTifyUITests */ = {
+		187BD1B82B0D2D6800DEAFB2 /* iDENTifyUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187BD1C92B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTifyUITests" */;
 			buildPhases = (
+				D34313913DB9DC90E53D5947 /* [CP] Check Pods Manifest.lock */,
 				187BD1B52B0D2D6800DEAFB2 /* Sources */,
 				187BD1B62B0D2D6800DEAFB2 /* Frameworks */,
 				187BD1B72B0D2D6800DEAFB2 /* Resources */,
+				579D7647B64D9909A96CC4F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D5A2BA736F86D14159B6DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDENTify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		579D7647B64D9909A96CC4F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		895B0C9009A7A63A9ACD89C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDENTifyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9D10D11951F6F92358CB017 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDENTify/Pods-iDENTify-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDENTify/Pods-iDENTify-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iDENTify/Pods-iDENTify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D34313913DB9DC90E53D5947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDENTify-iDENTifyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		187BD19B2B0D2D6700DEAFB2 /* Sources */ = {
@@ -416,6 +565,7 @@
 		};
 		187BD1C42B0D2D6800DEAFB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F79AA1405A75CD87283F18 /* Pods-iDENTify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -424,6 +574,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iDENTify/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to capture photos of your teeth for cavity detection analysis.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select existing photos of your teeth for cavity detection analysis.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save analyzed photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,6 +597,7 @@
 		};
 		187BD1C52B0D2D6800DEAFB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C8ED5688CDDF698C225E55A /* Pods-iDENTify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +606,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iDENTify/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to capture photos of your teeth for cavity detection analysis.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select existing photos of your teeth for cavity detection analysis.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save analyzed photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +629,7 @@
 		};
 		187BD1C72B0D2D6800DEAFB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD1E809E30B4869460D2EA60 /* Pods-iDENTifyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +649,7 @@
 		};
 		187BD1C82B0D2D6800DEAFB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DBE1912758B702BDA421FD8 /* Pods-iDENTifyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +669,7 @@
 		};
 		187BD1CA2B0D2D6800DEAFB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E1515DB2550801A9EF4BF7 /* Pods-iDENTify-iDENTifyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +687,7 @@
 		};
 		187BD1CB2B0D2D6800DEAFB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A92D87B0A27347321B5F25 /* Pods-iDENTify-iDENTifyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,7 +706,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-					187BD19A2B0D2D6700DEAFB2 /* Build configuration list for PBXProject "iDENTify" */ = {
+		187BD19A2B0D2D6700DEAFB2 /* Build configuration list for PBXProject "iDENTify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				187BD1C12B0D2D6800DEAFB2 /* Debug */,
@@ -554,7 +715,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-					187BD1C32B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTify" */ = {
+		187BD1C32B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				187BD1C42B0D2D6800DEAFB2 /* Debug */,
@@ -563,7 +724,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-					187BD1C62B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTifyTests" */ = {
+		187BD1C62B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTifyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				187BD1C72B0D2D6800DEAFB2 /* Debug */,
@@ -572,7 +733,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-					187BD1C92B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTifyUITests" */ = {
+		187BD1C92B0D2D6800DEAFB2 /* Build configuration list for PBXNativeTarget "iDENTifyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				187BD1CA2B0D2D6800DEAFB2 /* Debug */,
