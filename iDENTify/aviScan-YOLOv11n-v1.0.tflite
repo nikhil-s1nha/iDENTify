@@ -1,0 +1,4 @@
+PLACEHOLDER_MODEL_FILE
+This is a placeholder for the aviScan-YOLOv11n-v1.0.tflite model file.
+The actual model should be downloaded and converted using the Scripts/download_and_convert_model.py script.
+Once the real model is available, replace this file with the actual .tflite model.
