@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:04.300 --> 00:00:18.969
+Nikhil Sinha: Hi, my name is Nico. And today I want to show you guys something I created this summer and ideated, called Identify an intraoral analyzation tool. But before I get into what I identify really is my mission for it. I want to show you guys a little bit about myself.
+
+2
+00:00:19.070 --> 00:00:47.400
+Nikhil Sinha: So I'm a hobbyist at heart. I really love technology. So throughout high school, I've done a lot of projects that involve technology. So one of my more prominent things is robotics. So on the left you can see my robotics competition robot for the 1st robotics challenge, and I am the strategy, lead and software vice captain for one of the top 100 teams out of 3,000 in the world. So that's a robot on the left. I also founded my own rocketry teams where we build rockets. And
+
+3
+00:00:47.400 --> 00:01:15.779
+Nikhil Sinha: we teach kids the fundamentals of rocketry, as you can see on the right. That's me teaching around 100 to 200 kids in my community. And you can obviously see the rocket right there. So these are some of the tech things I like to do and something closer to identify. I do a lot of image analysis. So machine learning is something I'm really, really passionate about. And so you can see a picture of me analyzing MRI scans for Alzheimer's disease, which is my 1st introduction to this kind of space.
+
+4
+00:01:16.200 --> 00:01:25.790
+Nikhil Sinha: and by the space I mean artificial intelligence, of course, and that's grown over the last 2 years. And it's really gotten me to think about artificial intelligence.
+
+5
+00:01:25.860 --> 00:01:53.120
+Nikhil Sinha: So my story also lies in the fact that growing up. My mom's dental clinic was a place that's almost another home to me. I was raised there. I would be behind the reception desk, taking calls, sorting files anything you name it. So I got a really good understanding of, like the dental work pro how dentists are able to call patients back, how patients have different options. You know everything about how a dental clinic really works. I've kind of gotten exposed to.
+
+6
+00:01:53.120 --> 00:02:06.129
+Nikhil Sinha: and that's made me realize that there's a lot of problems with the dental industry. Obviously, there's a lot of new innovation. But there's also a lot of room to grow. And it made me pose this question this summer. How can we improve the dental industry with the integration of AI?
+
+7
+00:02:06.130 --> 00:02:29.089
+Nikhil Sinha: So obviously, there's a lot of companies that have realized this as well, and they are starting to create their implementation. So Invisalign's virtual care. AI is a great step towards orthodontics. Monitoring and dental monitoring is a further expansion of that. And there's also new AI platforms like Pearl, AI and Overjet AI, which allow dentists to do more things that we thought were possible.
+
+8
+00:02:29.090 --> 00:02:34.959
+Nikhil Sinha: And these are great implementations that are currently there. But there's something that I think we can expand on further
+
+9
+00:02:35.500 --> 00:02:46.850
+Nikhil Sinha: and simply, AI can do more for dentistry. And that's why I kind of created identify. So the goal of identify was to have an easier way or a better way to
+
+10
+00:02:46.970 --> 00:03:10.859
+Nikhil Sinha: predict emergency appointments, and the thought behind. It was the fact that we can kind of predict or sorry, not predict, but analyze intraoral images, to find clues for common oral diseases like caries and gingivitis. So you can see on the photos here. We've trained in an artificial intelligence model that is able to tell which part of the teeth have these chalky
+
+11
+00:03:11.134 --> 00:03:33.089
+Nikhil Sinha: these chalky parts that can be classified as caries. And now the whole idea of this comes from like stuff. My mom used to say, like, Hey, Nico! Your right canines are starting to have these chalky things around their gums. It's kind of a sign of caries. And that got me thinking if we can do that with our human eye, there's definitely a machine that can do this as well. So that's the kind of goal of identifying
+
+12
+00:03:33.090 --> 00:03:41.649
+Nikhil Sinha: to create something that mimics the doctor's intuition of these early signs of oral diseases.
+
+13
+00:03:41.970 --> 00:03:59.149
+Nikhil Sinha: So you can see here that, given an intraoral photo, it's able to detect which teeth are healthier than others, which teeth have that chalky sign that shows that they kind of have some premonition of a cavity, and that's what identify is all about getting this premonition.
+
+14
+00:03:59.150 --> 00:04:22.560
+Nikhil Sinha: So you can kind of see how the workflow is. So first, st we take these intraoral scans using things like invisalign smile lenses. These are obviously a great solution for intraoral photos. I tried myself to create my own version. It was obviously very difficult. Invisalign has figured out something amazing here. So give. But it's because of the quality of these scans. And that's why I suggest using it or not scan photos. That's why I suggest using it that we
+
+15
+00:04:23.160 --> 00:04:47.299
+Nikhil Sinha: are able to train a machine learning model. So the invisalign smile lens provides an isolated environment for a machine learning model to detect small signs. So instance in the photos over here, you can see when it's zoomed in which the model is able to do, it's able to highlight these teeth in pink, that it believes have some premonitions that chalky or that higher reach on the gums of these oral diseases.
+
+16
+00:04:47.300 --> 00:04:59.189
+Nikhil Sinha: and so, and at its heart identifies a convolutional neural network, which is what you see in this graph over here. It's how the images are trained, how the model is given a thousand plus images to
+
+17
+00:04:59.190 --> 00:05:05.100
+Nikhil Sinha: trade on, to understand the patterns, and then so that when you give it an image, it's able to make those same patterns.
+
+18
+00:05:05.100 --> 00:05:13.040
+Nikhil Sinha: So the fundamentals that identify is been creating this model to create based on these interaural scans create predictions.
+
+19
+00:05:13.970 --> 00:05:34.590
+Nikhil Sinha: So the impact of this is obviously massive. We've seen so many cases in orthodontics, especially where online monitoring has honestly been a life changing experience. Having gone through invisalign and braces myself, I can go. I can recall so many times. I wish I had some feedback, or some way to
+
+20
+00:05:34.590 --> 00:05:56.379
+Nikhil Sinha: get real time feedback, which is what this would provide. Imagine you're just like a patient, and you want to be. You want to be confident that your your post-OP is going well, and this is just an easy way to take a photo to get instant feedback. And this is not even just a post operation thing. It can be pre-operation post operation, allowing dentists to kind of monitor
+
+21
+00:05:56.420 --> 00:05:57.690
+Nikhil Sinha: people
+
+22
+00:05:58.080 --> 00:06:27.500
+Nikhil Sinha: while getting like alerts. So a lot of the times I saw in my mom's dental clinic was that emergency appointments are a big problem. And this is because a lot of these patients have no idea that this problem is arising after their operation, and only when it starts to hurt. Obviously they have to come in, and that messes up dental schedules. So the idea with identify is that by monitoring these post Ops day by day we can kind of predict what patients would need these emergency appointments
+
+23
+00:06:27.500 --> 00:06:33.894
+Nikhil Sinha: and schedule them ahead of time. So that saves a lot of help on the dentist. It also helps the dentists in terms of
+
+24
+00:06:34.420 --> 00:06:58.120
+Nikhil Sinha: not dealing with as much stress, which is what I've seen. A lot of dental clinics and dentists around here deal with. Obviously, there's so many other use cases such as exams for insurances. You don't have to go through that whole hassle with them. And yeah, so for both patients and dentists, it's an opportunity to alleviate some stress post operation pre-operation. And just in general.
+
+25
+00:06:58.200 --> 00:07:10.609
+Nikhil Sinha: So I'm really excited to go to the Bay Area dental expo this in August. So I just want to show my work to a lot of the people there. Show them what I've created, and of course get some advice on
+
+26
+00:07:10.610 --> 00:07:29.369
+Nikhil Sinha: what we can do with identify and improve the model, improve its capabilities. And because of AI, such an emerging field, and I think the Bay Area dental Expo realizes that. And it's a large topic of the Expo. This year. I would be very excited to present my work and meet colleagues there who are as passionate about this as I am. So thank you, guys.
+

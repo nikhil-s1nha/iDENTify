@@ -1,0 +1,13 @@
+train: F:/cavity detection\cavity.v3-release.yolov12/train/images
+val: F:/cavity detection/cavity.v3-release.yolov12/valid/images
+test: F:/cavity detection/cavity.v3-release.yolov12/test/images
+
+nc: 4
+names: ['cavity', 'normal', 'cavity', 'normal']
+
+roboflow:
+  workspace: roboflow-100
+  project: cavity-rs0uf
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/roboflow-100/cavity-rs0uf/dataset/3

@@ -1,0 +1,11 @@
+{
+    "model_name": "cavity_detection",
+    "version": "1.0.0",
+    "input_size": [640, 640],
+    "num_classes": 4,
+    "class_names": ["cavity", "normal", "cavity", "normal"],
+    "confidence_threshold": 0.5,
+    "iou_threshold": 0.4,
+    "format": "yolo",
+    "model_type": "pytorch"
+}

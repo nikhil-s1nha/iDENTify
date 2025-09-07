@@ -6,7 +6,11 @@ target 'iDENTify' do
   use_frameworks! :linkage => :static
 
   # Pods for iDENTify
-  pod 'TensorFlowLiteSwift'
+  # TensorFlow Lite for iOS - optimized for mobile inference
+  pod 'TensorFlowLiteSwift', '~> 2.14.0'
+  
+  # Optional: TensorFlow Lite Metal delegate for GPU acceleration
+  pod 'TensorFlowLiteSwift/Metal', '~> 2.14.0'
 
   target 'iDENTifyTests' do
     inherit! :search_paths

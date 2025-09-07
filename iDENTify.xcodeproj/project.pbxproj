@@ -24,7 +24,12 @@
 		18F483742E6C1C57008D323C /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F483712E6C1C57008D323C /* ImagePreviewView.swift */; };
 		18F483752E6C1C57008D323C /* CavityDetectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4836E2E6C1C57008D323C /* CavityDetectionCard.swift */; };
 		18F483762E6C1C57008D323C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F483702E6C1C57008D323C /* ImagePicker.swift */; };
-		18F483782E6C1C8A008D323C /* aviScan-YOLOv11n-v1.0.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 18F483772E6C1C8A008D323C /* aviScan-YOLOv11n-v1.0.tflite */; };
+		18F4837A2E6C2A61008D323C /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F483792E6C2A61008D323C /* FileIO.swift */; };
+		18F483852E6C2B1F008D323C /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 18F483822E6C2B1F008D323C /* config.json */; };
+		18F483862E6C2B1F008D323C /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18F483832E6C2B1F008D323C /* labels.txt */; };
+		18F483872E6C2B1F008D323C /* cavity_detection.pt in Resources */ = {isa = PBXBuildFile; fileRef = 18F483812E6C2B1F008D323C /* cavity_detection.pt */; };
+		18F4838B2E6C3086008D323C /* cavity_detection.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 18F4838A2E6C3086008D323C /* cavity_detection.tflite */; };
+		18F4838D2E6C89CD008D323C /* aviScan-YOLOv11n-v1.0.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 18F4838C2E6C89CD008D323C /* aviScan-YOLOv11n-v1.0.tflite */; };
 		3E816B5EF16F145A8941A3DE /* Pods_iDENTify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C315DFA3866F2499593EC6 /* Pods_iDENTify.framework */; };
 		58AB7CF5BFBD0A17210A021C /* Pods_iDENTify_iDENTifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABD97473C9957E311D7D2E9 /* Pods_iDENTify_iDENTifyUITests.framework */; };
 		A08FCA14B9B3558A3C3D2358 /* Pods_iDENTifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566D9D347232B1D78C359E4A /* Pods_iDENTifyTests.framework */; };
@@ -70,7 +75,12 @@
 		18F483702E6C1C57008D323C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		18F483712E6C1C57008D323C /* ImagePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewView.swift; sourceTree = "<group>"; };
 		18F483722E6C1C57008D323C /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
-		18F483772E6C1C8A008D323C /* aviScan-YOLOv11n-v1.0.tflite */ = {isa = PBXFileReference; lastKnownFileType = text; path = "aviScan-YOLOv11n-v1.0.tflite"; sourceTree = "<group>"; };
+		18F483792E6C2A61008D323C /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+		18F483812E6C2B1F008D323C /* cavity_detection.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = cavity_detection.pt; sourceTree = "<group>"; };
+		18F483822E6C2B1F008D323C /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		18F483832E6C2B1F008D323C /* labels.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		18F4838A2E6C3086008D323C /* cavity_detection.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cavity_detection.tflite; sourceTree = "<group>"; };
+		18F4838C2E6C89CD008D323C /* aviScan-YOLOv11n-v1.0.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aviScan-YOLOv11n-v1.0.tflite"; sourceTree = "<group>"; };
 		520B23074CBF74542BCCD8CA /* Pods-iDENTify-iDENTifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDENTify-iDENTifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		566D9D347232B1D78C359E4A /* Pods_iDENTifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDENTifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABD97473C9957E311D7D2E9 /* Pods_iDENTify_iDENTifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDENTify_iDENTifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +143,10 @@
 		187BD1A12B0D2D6700DEAFB2 /* iDENTify */ = {
 			isa = PBXGroup;
 			children = (
-				18F483772E6C1C8A008D323C /* aviScan-YOLOv11n-v1.0.tflite */,
+				18F4838C2E6C89CD008D323C /* aviScan-YOLOv11n-v1.0.tflite */,
+				18F4838A2E6C3086008D323C /* cavity_detection.tflite */,
+				18F483842E6C2B1F008D323C /* Models */,
+				18F483792E6C2A61008D323C /* FileIO.swift */,
 				18F483702E6C1C57008D323C /* ImagePicker.swift */,
 				18F483712E6C1C57008D323C /* ImagePreviewView.swift */,
 				18F483722E6C1C57008D323C /* ResultsView.swift */,
@@ -177,6 +190,16 @@
 			path = iDENTifyUITests;
 			sourceTree = "<group>";
 		};
+		18F483842E6C2B1F008D323C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18F483812E6C2B1F008D323C /* cavity_detection.pt */,
+				18F483822E6C2B1F008D323C /* config.json */,
+				18F483832E6C2B1F008D323C /* labels.txt */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		984B0803EADA1FDC7B252FED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,7 +234,6 @@
 				187BD19B2B0D2D6700DEAFB2 /* Sources */,
 				187BD19C2B0D2D6700DEAFB2 /* Frameworks */,
 				187BD19D2B0D2D6700DEAFB2 /* Resources */,
-				31C5DE36A0BCFFF005FE9DEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,7 +271,6 @@
 				187BD1B52B0D2D6800DEAFB2 /* Sources */,
 				187BD1B62B0D2D6800DEAFB2 /* Frameworks */,
 				187BD1B72B0D2D6800DEAFB2 /* Resources */,
-				DA8E1BFF40A6DCDE0416BCBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,7 +332,11 @@
 			files = (
 				187BD1AA2B0D2D6800DEAFB2 /* Preview Assets.xcassets in Resources */,
 				187BD1A72B0D2D6800DEAFB2 /* Assets.xcassets in Resources */,
-				18F483782E6C1C8A008D323C /* aviScan-YOLOv11n-v1.0.tflite in Resources */,
+				18F4838D2E6C89CD008D323C /* aviScan-YOLOv11n-v1.0.tflite in Resources */,
+				18F483852E6C2B1F008D323C /* config.json in Resources */,
+				18F4838B2E6C3086008D323C /* cavity_detection.tflite in Resources */,
+				18F483862E6C2B1F008D323C /* labels.txt in Resources */,
+				18F483872E6C2B1F008D323C /* cavity_detection.pt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,27 +357,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31C5DE36A0BCFFF005FE9DEE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iDENTify/Pods-iDENTify-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iDENTify/Pods-iDENTify-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iDENTify/Pods-iDENTify-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6E586B8495F0736A5A9F6A93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,27 +401,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DA8E1BFF40A6DCDE0416BCBF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iDENTify-iDENTifyUITests/Pods-iDENTify-iDENTifyUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F0D65C1601ABDECFB658EFA2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,6 +442,7 @@
 				18F4836D2E6C1C23008D323C /* CameraViewModel.swift in Sources */,
 				18F483662E6C1BF2008D323C /* CavityDetectionModels.swift in Sources */,
 				18F483672E6C1BF2008D323C /* NavigationState.swift in Sources */,
+				18F4837A2E6C2A61008D323C /* FileIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -60,6 +60,29 @@ public class ImageProcessingUtils {
         return (pixelBuffer, preprocessingParams)
     }
     
+    /// Preprocess image specifically for YOLO v11n model input
+    /// This method ensures proper 640x640 input with correct normalization for the aviScan model
+    /// - Parameter image: Input UIImage
+    /// - Returns: Tuple containing preprocessed CVPixelBuffer and preprocessing parameters
+    /// - Throws: DetectionError if preprocessing fails
+    public static func preprocessImageForYOLO(_ image: UIImage) throws -> (CVPixelBuffer, PreprocessingParams) {
+        // Validate input image
+        guard let cgImage = image.cgImage else {
+            throw DetectionError.invalidInput("Unable to get CGImage from UIImage")
+        }
+        
+        // Resize image to exactly 640x640 with letterboxing for YOLO v11n
+        let (resizedImage, preprocessingParams) = try resizeImageForYOLO(
+            cgImage,
+            targetSize: modelInputSize
+        )
+        
+        // Convert to CVPixelBuffer
+        let pixelBuffer = try createPixelBuffer(from: resizedImage, size: modelInputSize)
+        
+        return (pixelBuffer, preprocessingParams)
+    }
+    
     /// Resize a CGImage to target size
     /// - Parameters:
     ///   - cgImage: Source CGImage
@@ -147,6 +170,78 @@ public class ImageProcessingUtils {
         return (resizedImage, preprocessingParams)
     }
     
+    /// Resize a CGImage specifically for YOLO v11n model input
+    /// Ensures proper letterboxing and normalization for the aviScan model
+    /// - Parameters:
+    ///   - cgImage: Source CGImage
+    ///   - targetSize: Target size for resizing (should be 640x640 for YOLO v11n)
+    /// - Returns: Tuple containing resized CGImage and preprocessing parameters
+    /// - Throws: DetectionError if resize fails
+    private static func resizeImageForYOLO(
+        _ cgImage: CGImage,
+        targetSize: CGSize
+    ) throws -> (CGImage, PreprocessingParams) {
+        
+        let width = Int(targetSize.width)
+        let height = Int(targetSize.height)
+        
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let bitmapInfo = CGImageAlphaInfo.premultipliedLast.rawValue
+        
+        guard let context = CGContext(
+            data: nil,
+            width: width,
+            height: height,
+            bitsPerComponent: 8,
+            bytesPerRow: width * 4,
+            space: colorSpace,
+            bitmapInfo: bitmapInfo
+        ) else {
+            throw DetectionError.imageProcessingFailed("Failed to create CGContext for YOLO resizing")
+        }
+        
+        // Calculate aspect ratio preserving dimensions with letterbox padding
+        let imageAspectRatio = CGFloat(cgImage.width) / CGFloat(cgImage.height)
+        let targetAspectRatio = targetSize.width / targetSize.height
+        
+        var drawSize = targetSize
+        if imageAspectRatio > targetAspectRatio {
+            // Image is wider than target - fit to width, pad height
+            drawSize.height = targetSize.width / imageAspectRatio
+        } else {
+            // Image is taller than target - fit to height, pad width
+            drawSize.width = targetSize.height * imageAspectRatio
+        }
+        
+        let xOffset = (targetSize.width - drawSize.width) / 2
+        let yOffset = (targetSize.height - drawSize.height) / 2
+        
+        // Clear background to black (letterbox padding) - important for YOLO
+        context.setFillColor(CGColor(red: 0, green: 0, blue: 0, alpha: 1))
+        context.fill(CGRect(x: 0, y: 0, width: width, height: height))
+        
+        // Draw image centered with proper scaling
+        context.draw(cgImage, in: CGRect(x: xOffset, y: yOffset, width: drawSize.width, height: drawSize.height))
+        
+        // Create preprocessing parameters with letterbox info
+        let preprocessingParams = PreprocessingParams(
+            inputSize: targetSize,
+            normalizationMethod: "standard", // 0-1 normalization for YOLO
+            colorSpace: "RGB",
+            drawRect: CGRect(x: xOffset, y: yOffset, width: drawSize.width, height: drawSize.height),
+            offsetX: xOffset,
+            offsetY: yOffset,
+            drawWidth: drawSize.width,
+            drawHeight: drawSize.height
+        )
+        
+        guard let resizedImage = context.makeImage() else {
+            throw DetectionError.imageProcessingFailed("Failed to create resized CGImage for YOLO")
+        }
+        
+        return (resizedImage, preprocessingParams)
+    }
+    
     /// Create CVPixelBuffer from CGImage
     /// - Parameters:
     ///   - cgImage: Source CGImage
@@ -200,7 +295,7 @@ public class ImageProcessingUtils {
     
     // MARK: - CVPixelBuffer to Float32 Array Conversion
     
-    /// Convert CVPixelBuffer to Float32 array for TensorFlow Lite input
+    /// Convert CVPixelBuffer to Float32 array for TensorFlow Lite input using Accelerate/vImage
     /// - Parameter pixelBuffer: CVPixelBuffer containing image data
     /// - Returns: Float32 array in [batch, height, width, channels] format
     /// - Throws: DetectionError if conversion fails
@@ -216,25 +311,45 @@ public class ImageProcessingUtils {
             throw DetectionError.imageProcessingFailed("Failed to get pixel buffer base address")
         }
         
-        let pixelData = baseAddress.assumingMemoryBound(to: UInt8.self)
-        var floatArray: [Float32] = []
-        floatArray.reserveCapacity(width * height * colorChannels)
+        // Pre-allocate output buffer for better performance
+        let totalPixels = width * height
+        var floatArray = [Float32](repeating: 0, count: totalPixels * colorChannels)
         
-        // Convert BGRA to RGB and normalize to [0, 1]
-        for y in 0..<height {
-            for x in 0..<width {
-                let pixelIndex = y * bytesPerRow + x * 4
-                
-                // Extract RGB values and normalize
-                let r = Float32(pixelData[pixelIndex + 2]) / 255.0
-                let g = Float32(pixelData[pixelIndex + 1]) / 255.0
-                let b = Float32(pixelData[pixelIndex]) / 255.0
-                
-                floatArray.append(r)
-                floatArray.append(g)
-                floatArray.append(b)
-            }
+        // Use vImage for efficient BGRA to RGB conversion and normalization
+        let pixelData = baseAddress.assumingMemoryBound(to: UInt8.self)
+        
+        // Create vImage buffers
+        var sourceBuffer = vImage_Buffer(
+            data: pixelData,
+            height: vImagePixelCount(height),
+            width: vImagePixelCount(width),
+            rowBytes: bytesPerRow
+        )
+        
+        // Allocate intermediate buffer for RGB data
+        let rgbBytesPerRow = width * 3
+        let rgbBufferSize = rgbBytesPerRow * height
+        let rgbBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: rgbBufferSize)
+        defer { rgbBuffer.deallocate() }
+        
+        var destBuffer = vImage_Buffer(
+            data: rgbBuffer,
+            height: vImagePixelCount(height),
+            width: vImagePixelCount(width),
+            rowBytes: rgbBytesPerRow
+        )
+        
+        // Convert BGRA to RGB using vImage
+        let error = vImageConvert_BGRA8888toRGB888(&sourceBuffer, &destBuffer, vImage_Flags(kvImageNoFlags))
+        guard error == kvImageNoError else {
+            throw DetectionError.imageProcessingFailed("vImage BGRA to RGB conversion failed")
         }
+        
+        // Convert RGB to Float32 and normalize to [0, 1] using Accelerate
+        var scale: Float32 = 1.0 / 255.0
+        var tempFloatArray = [Float32](repeating: 0, count: totalPixels * colorChannels)
+        vDSP_vfltu8(destBuffer.data.assumingMemoryBound(to: UInt8.self), 1, &tempFloatArray, 1, vDSP_Length(totalPixels * colorChannels))
+        vDSP_vsmul(&tempFloatArray, 1, &scale, &floatArray, 1, vDSP_Length(totalPixels * colorChannels))
         
         return floatArray
     }
